@@ -5,7 +5,7 @@ const userRouter=require('./routers/user');
 const taskRouter =require('./routers/task');
 
 const Task=require("./model/task");
-const port=process.env.PORT;
+const port=process.env.PORT || 3000;
 // this command is use to get the json data from browser
 
 app.use(express.json());
